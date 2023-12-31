@@ -108,6 +108,26 @@ datos, una vez hecho este procedimiento decidimos borrar low_corr_columns pues e
 
 <br>
 
+Una vez teniendo todas las gráficas se realizó el análisis de balanceo de datos pues esto nos ayudara en los siguientes procesos, para esto<br>
+se usó el algoritmo de SMOTE de la librería de imblearn con la cual nos ayudara para crear más datos virtuales para un correcto<br>
+entrenamiento en los modelos a aplicar en los siguientes pasos
+
+<br>
+
+![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/f59b30f7-9ba6-4fd4-9677-de552ef3164c)
+
+<br>
+
+Al utilizar la librería vemos los cambios en los datos
+
+<br>
+
+![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/72970e5a-c0c3-4a49-9720-a27b44da542c)
+
+<br>
+
+
+
 
 
 
