@@ -21,6 +21,18 @@ Este archivo almacena un extenso historial de una base de datos perteneciente a 
 El archivo "german_credit.csv" cuenta con informacion relavante como, sexo, cantidad prestada, estado civil, el plazo de pago entre otros, <br>
 se uso el metodo de pandas read_csv para la lectura de los datos del archivo texto
 <br>
+
 ![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/5ba4733c-70d6-4dce-b883-731240dea1cb)
+
+<br>
+
+## DataCleaning
+Una vez obtenidos los datos y almacenados en una variable del tipo DataFrame (df_banco) se procedió a examinar los datos, lo que se buscaba era<br>
+encontrar datos duplicados y nulos y retirarlos del DataFrame para trabajarlos de mejor manera, nos valimos de métodos de la librería pandas   <br>
+para encontrar este grupo de datos no deseados, alguno de los métodos usados fueron  .drop(), drop_duplicates(), dropna() entre otros, una vez <br>
+limpios los datos verificamos el contenido del DataFrame resultante y notamos que contamos con 1000 registros.
+<br>
+
+![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/bbee679d-5f08-42d4-924b-eec8543c0789)
 
 <br>
