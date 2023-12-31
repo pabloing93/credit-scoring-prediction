@@ -52,6 +52,63 @@ campos,todo esto se realizó a partir de la función feature_engineering.
 
 <br>
 
+## Data Analyst and Visualization
+Una vez hechos los cambios en el DataFrame (df_banco) se graficaron los campos obtenidos junto a la variable a predecir, para esto hicimos <br>
+uso de una función llamada analisis_exploratorio, la cual se encarga de graficar estas variables
+
+<br>
+
+![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/668713bf-ec30-4e6a-8b5a-48378db69178)
+
+<br>
+
+![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/4929b68f-1c0b-4706-90ab-c13f37a7c97e)
+
+<br>
+
+![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/cf005d92-30ff-41b1-a052-b28f840adbc8)
+
+<br>
+
+Al notar que las gráficas de histograma de rango_plazos_credito y rango_edad tienen una sexta columna con muy pocos datos, se tomó la <br>
+decisión de unir el espectro de datos de las últimas columnas con la penúltima para así reducir ese espectro de datos a 5 columnas, <br>
+ya que esas últimas columna (la sexta columna en ambos histogramas) tenían muy pocos datos
+
+<br>
+
+![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/32cee3d2-e5b6-433d-8077-81e8b5e5370e)
+
+
+![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/e8249962-3c51-41ad-bff1-d1c6887abead)
+
+<br>
+
+Luego del análisis de unir esos espectros de datos y gracias a la función analisis_exploratorio vimos la Matrix de correlación, la cual al <br>
+analizarla notamos que las variables que se pueden explicar mejor la una ala otra son sexo con estado_civil y además de esas <br>
+rango_plazos_credito con rango_valor_credito
+
+<br>
+
+![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/b3323c2a-b8d4-4af2-8a44-e2f7fec31745)
+
+<br>
+
+Se tomó la decisión de eliminar los campos de sexo y rango_valor_credito, esto se hizo de esta forma pues en el caso de sexo, tiene una <br>
+correlación más alta con otras variables que estado_civil, del mismo modo al observar la Matrix de correlación pasa exactamente lo mismo con<br>
+rango_valor_credito y rango_plazos_credito, rango_valor_credito tiene mucha más correlación con otras variables.
+
+<br>
+
+Del mismo modo usamos la matrix de correlación para buscar las variables con indice de correlación despreciables para el análisis de los <br>
+datos, una vez hecho este procedimiento decidimos borrar low_corr_columns pues esta no tenia mucha relavancia para el análisis
+
+<br>
+
+![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/239b03e5-9f51-48f4-a9d7-acb5222ba6fe)
+
+<br>
+
+
 
 
 
