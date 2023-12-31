@@ -126,6 +126,82 @@ Al utilizar la librería vemos los cambios en los datos
 
 <br>
 
+# Construcción de Modelos
+Una vez tenemos los datos balanceados procederemos a la creación y optimización de los diferentes modelos de Machine Learning. <br>
+Para esto usaremos las librerías de Numpy, matplotlib.pyplot y SkLearn las cuales de esta última dependiendo del modelo así será la importación<br>
+de la instancia de esta librería, en el siguiente ejemplo lo tenemos para el modelo de Naive Bayes con el algoritmo de BernulliNB
+
+<br>
+
+![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/dd995c48-4727-48b6-add3-904435c1cce2)
+
+<br>
+
+Los datos fueron separados en "y" para la variable a calcular y "x" para todas las demas variables dependientes. <br>
+Se normalizaron los datos y a partir de esta normalización y el algoritmo de train_test_split se obtuvieron los datos de "x" e <br>
+"y" de prueba y entrenamiento
+
+<br>
+
+![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/d16ed79a-7ac3-45f6-ae31-b83f929100c0)
+
+<br>
+
+Una vez obtenidos las variables de entrenamiento y prueba se implementará el modelo y tomaremos sus métricas para un análisis posterior
+
+<br>
+Una vez realizado la separación de las variables de entrenamiento y prueba, se utilizó el algoritmo de Kfolds con <br>
+Cross Validation y RandomizedSearchCV para encontrar los mejores parámetros para nuestro modelo (Cabe recalcar que para el ejemplo  <br>
+estamos usando Naive Bayes con BernulliNB y como este modelo solo funciona con datos binarizados las variables x_test y x_train han sido <br>
+binarizadas, esto solo ocurrirá para este modelo)
+
+<br>
+
+![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/1a4775a8-3b68-41b8-92fb-910d30e09785)
+
+<br>
+
+![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/030c5f93-1f1d-48ce-819d-3f3a4eae8bcc)
+
+<br>
+
+Una vez optenidos los mejores parametros los usaremos para la implementación del modelo en condiciones optimas (optimización del modelo)
+
+<br>
+
+![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/0ce63630-452d-406e-8b0d-b2fd200464a2)
+
+<br>
+
+Una vez implementado, se obtendrán las métricas del modelo, y se compararán con las métricas del modelo sin optimización, para eso se hará<br>
+en torno a la Matrix de confusión
+
+<br>
+
+![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/804a6973-e48d-49d5-bea1-623f457ecae7)
+
+<br>
+
+# Evaluación y Selección del Modelo
+
+Una vez obtenidas todas las métricas de todos los modelos procederemos a compararlas entre si para la selección del mejor método. <br>
+Para el caso de estudio la métrica mas representativa sera la Specificity pues esta trabaja con los verdaderos negativos y por <br>
+la naturaleza del ejercicio (la variable a predecir) estamos buscando los 0 verdaderos sobre los 0 falsos pues según el <br>
+archivo "german_dataset_dictionary.txt" cuando el valor de la variable a predecir es 0 significa que el cliente es muy probable <br>
+que pague.
+
+<br>
+
+![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/514c9d26-259a-4e35-9747-f4e39815f853)
+
+<br>
+
+En conclusión el mejor modelo para este caso sera RandomForestClassifier
+
+
+
+
+
 
 
 
