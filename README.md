@@ -27,12 +27,32 @@ se uso el metodo de pandas read_csv para la lectura de los datos del archivo tex
 <br>
 
 ## DataCleaning
-Una vez obtenidos los datos y almacenados en una variable del tipo DataFrame (df_banco) se procedió a examinar los datos, lo que se buscaba era<br>
-encontrar datos duplicados y nulos y retirarlos del DataFrame para trabajarlos de mejor manera, nos valimos de métodos de la librería pandas   <br>
-para encontrar este grupo de datos no deseados, alguno de los métodos usados fueron  .drop(), drop_duplicates(), dropna() entre otros, una vez <br>
-limpios los datos verificamos el contenido del DataFrame resultante y notamos que contamos con 1000 registros.
+Una vez obtenidos los datos y almacenados en una variable del tipo DataFrame (df_banco) se procedió a examinar los datos, lo que se buscaba <br>
+era encontrar datos duplicados y nulos y retirarlos del DataFrame para trabajarlos de mejor manera, nos valimos de métodos de la librería   <br>
+pandas para encontrar este grupo de datos no deseados, alguno de los métodos usados fueron  .drop(), drop_duplicates(), dropna() entre otros,<br>
+una vez limpios los datos verificamos el contenido del DataFrame resultante y notamos que contamos con 1000 registros.
 <br>
 
 ![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/bbee679d-5f08-42d4-924b-eec8543c0789)
 
 <br>
+
+# Exploración de Datos
+## EDA
+Al analizar el DataFrame obtenido después de la limpieza de los datos (df_banco) se procedió a realizar algunos cambios en sus campos, para <br>
+decidir dichos cambios se accedió a "german_dataset-dictionary.txt" el cual es un documento de texto que contiene categorizado los campos <br>
+del dataset de la base de datos (german_credit.csv) con este documento de apoyo y a partir de personal_status_sex se crearon dos campos más<br>
+los cuales fueron sexo y estado_civil, a partir de age se creó el rango_edad, a partir de duration_in_month se creó rango_plazos_creditos y a<br>
+partir de credit_amount se creó rango_valor_credito, una vez hechos estos cambios se borraron los campos que fueron base para crear nuevos <br>
+campos,todo esto se realizó a partir de la función feature_engineering.
+
+<br>
+
+![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/4d7f896f-52b5-4a7a-b8b8-bf45c9cf525d)
+
+<br>
+
+
+
+
+
