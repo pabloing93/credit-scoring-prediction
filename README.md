@@ -13,13 +13,14 @@ están utilizando algunas bibliotecas clave, como pandas, seaborn, matplotlib.py
 
 <br>
 
-## Titulo 2
-### Titulo 3
+# Procesamiento de los Datos
+## Obtención de los Datos
+Los datos utilizados en este proyecto fueron obtenidos mediante la lectura de un archivo CSV denominado "german_credit.csv". <br>
+Este archivo almacena un extenso historial de una base de datos perteneciente a un banco alemán que ofrece servicios de entrega de préstamos. 
 
-Párrafo <br>
-Otro ppraasidpfojasdkflpoj <br>
-JKALSDFJKHSADFJKHSAJDFKHASJDKFHSJKDF<br>
-😀😀😀😀😀😀😀<br>
-![image](https://github.com/pabloing93/credit-scoring-prediction/assets/32267303/446c0868-413d-4e8c-93a3-bacb262cae67)
+El archivo "german_credit.csv" cuenta con informacion relavante como, sexo, cantidad prestada, estado civil, el plazo de pago entre otros, <br>
+se uso el metodo de pandas read_csv para la lectura de los datos del archivo texto
+<br>
+![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/5ba4733c-70d6-4dce-b883-731240dea1cb)
 
-
+<br>
