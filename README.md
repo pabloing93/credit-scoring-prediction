@@ -6,7 +6,7 @@
 
 <h2>Presentación corporativa</h2>
 
-<a href="https://media.licdn.com/dms/document/media/D4D1FAQFTFSQmfxpXjA/feedshare-document-pdf-analyzed/0/1705702108636?e=1706745600&v=beta&t=IIKX2wKntAhyybux7hTMzSA0BGYBytDJen2pYHr63rU" download="creditscoring.pdf">Descargar PDF</a>
+<a href="https://www.linkedin.com/posts/pabloing_machine-learning-credit-scoring-activity-7154233394342592512-Alj6/">Link a la publicación de Linkedin</a>
 
 
 <h2>Tecnologías utilizadas </h2>
@@ -20,42 +20,22 @@ basándose en sus métricas y datos. El objetivo principal es utilizar algoritmo
 que un usuario sea capaz de pagar un préstamo, utilizando información histórica y métricas financieras.<br>
 
 <h2>1. Limpieza</h2>
-  <h3>1.2. Procesamiento de los Datos</h3>
-  <h3>1.3. EDA: Análisis exploratorio de los datos</h3>
-<h2>2. Modelos</h2>
-  <h3>2.2. Implementación de los modelos</h3>
-<h2>3. Evaluación</h2>
-  <h3>3.2. Evaluación de los modelos y selección del mejor</h3>
-<h2>4. Predicción</h2>
 
-<h1>README IN PROGRESS </h1>
-
-# Procesamiento de los Datos
-## Obtención de los Datos
+<h3>1.2. Procesamiento de los Datos</h3>
 Los datos utilizados en este proyecto fueron obtenidos mediante la lectura de un archivo CSV denominado "german_credit.csv". <br>
-Este archivo almacena un extenso historial de una base de datos perteneciente a un banco alemán que ofrece servicios de entrega de préstamos. 
-
-El archivo "german_credit.csv" cuenta con informacion relavante como, sexo, cantidad prestada, estado civil, el plazo de pago entre otros, <br>
-se uso el metodo de pandas read_csv para la lectura de los datos del archivo texto
-<br>
+Este archivo almacena un extenso historial de una base de datos perteneciente a un banco alemán que ofrece servicios de entrega de préstamos.
+Una vez obtenidos los datos y almacenados en una variable del tipo DataFrame (df_banco) se procedió a examinar los datos, lo que se buscaba
+era encontrar datos duplicados y nulos y retirarlos del DataFrame para trabajarlos de mejor manera, nos valimos de métodos de la librería
+pandas para encontrar este grupo de datos no deseados, alguno de los métodos usados fueron .drop(), drop_duplicates(), dropna() entre otros.
 
 ![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/5ba4733c-70d6-4dce-b883-731240dea1cb)
 
-<br>
-
-## DataCleaning
-Una vez obtenidos los datos y almacenados en una variable del tipo DataFrame (df_banco) se procedió a examinar los datos, lo que se buscaba <br>
-era encontrar datos duplicados y nulos y retirarlos del DataFrame para trabajarlos de mejor manera, nos valimos de métodos de la librería   <br>
-pandas para encontrar este grupo de datos no deseados, alguno de los métodos usados fueron  .drop(), drop_duplicates(), dropna() entre otros,<br>
-una vez limpios los datos verificamos el contenido del DataFrame resultante y notamos que contamos con 1000 registros.
-<br>
-
 ![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/bbee679d-5f08-42d4-924b-eec8543c0789)
 
-<br>
 
-# Exploración de Datos
-## EDA
+
+<h3>1.3. EDA: Análisis exploratorio de los datos</h3>
+
 Al analizar el DataFrame obtenido después de la limpieza de los datos (df_banco) se procedió a realizar algunos cambios en sus campos, para <br>
 decidir dichos cambios se accedió a "german_dataset-dictionary.txt" el cual es un documento de texto que contiene categorizado los campos <br>
 del dataset de la base de datos (german_credit.csv) con este documento de apoyo y a partir de personal_status_sex se crearon dos campos más<br>
@@ -63,13 +43,7 @@ los cuales fueron sexo y estado_civil, a partir de age se creó el rango_edad, a
 partir de credit_amount se creó rango_valor_credito, una vez hechos estos cambios se borraron los campos que fueron base para crear nuevos <br>
 campos,todo esto se realizó a partir de la función feature_engineering.
 
-<br>
 
-![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/4d7f896f-52b5-4a7a-b8b8-bf45c9cf525d)
-
-<br>
-
-## Data Analyst and Visualization
 Una vez hechos los cambios en el DataFrame (df_banco) se graficaron los campos obtenidos junto a la variable a predecir, para esto hicimos <br>
 uso de una función llamada analisis_exploratorio, la cual se encarga de graficar estas variables
 
@@ -139,11 +113,11 @@ Al utilizar la librería vemos los cambios en los datos
 
 <br>
 
-![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/72970e5a-c0c3-4a49-9720-a27b44da542c)
+![image](https://github.com/pabloing93/credit-scoring-prediction/assets/32267303/f1ac8d80-3b15-487f-b453-a41755adc462)
 
-<br>
 
-# Construcción de Modelos
+<h2>2. Modelos</h2>
+<h3>2.2. Implementación de los modelos</h3>
 Una vez tenemos los datos balanceados procederemos a la creación y optimización de los diferentes modelos de Machine Learning. <br>
 Para esto usaremos las librerías de Numpy, matplotlib.pyplot y SkLearn las cuales de esta última dependiendo del modelo así será la importación<br>
 de la instancia de esta librería, en el siguiente ejemplo lo tenemos para el modelo de Naive Bayes con el algoritmo de BernulliNB
@@ -199,7 +173,7 @@ en torno a la Matrix de confusión
 
 <br>
 
-# Evaluación y Selección del Modelo
+<h2>3. Evaluación</h2>
 
 Una vez obtenidas todas las métricas de todos los modelos procederemos a compararlas entre si para la selección del mejor método. <br>
 Para el caso de estudio la métrica mas representativa sera la Specificity pues esta trabaja con los verdaderos negativos y por <br>
@@ -214,6 +188,18 @@ que pague.
 <br>
 
 En conclusión el mejor modelo para este caso sera RandomForestClassifier
+
+<h2>4. Predicción</h2>
+
+
+
+
+
+
+
+# Evaluación y Selección del Modelo
+
+
 
 
 
