@@ -4,6 +4,11 @@
 
 ![image](https://github.com/pabloing93/credit-scoring-prediction/assets/32267303/294c6665-7037-49d3-864f-9897f475cb79)
 
+<h2>Presentación corporativa</h2>
+
+<a href="https://www.linkedin.com/posts/pabloing_machine-learning-credit-scoring-activity-7154233394342592512-Alj6" target="_blank">Link a la publicación</a>
+
+
 <h2>Tecnologías utilizadas </h2>
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-blue.svg?style=for-the-badge&logo=Matplotlib&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
