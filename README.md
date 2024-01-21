@@ -6,7 +6,7 @@
 
 <h2>Presentación corporativa</h2>
 
-<a href="https://www.linkedin.com/posts/pabloing_machine-learning-credit-scoring-activity-7154233394342592512-Alj6" target="_blank">Link a la publicación</a>
+<a href="https://media.licdn.com/dms/document/media/D4D1FAQFTFSQmfxpXjA/feedshare-document-pdf-analyzed/0/1705702108636?e=1706745600&v=beta&t=IIKX2wKntAhyybux7hTMzSA0BGYBytDJen2pYHr63rU" download="creditscoring.pdf">Descargar PDF</a>
 
 
 <h2>Tecnologías utilizadas </h2>
