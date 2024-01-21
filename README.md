@@ -1,17 +1,29 @@
-# credit-scoring-prediction
+<h1>Credit Scoring Prediction</h1>
+
+<h2>Cómo leer este proyecto 📝</h2>
+
+![image](https://github.com/pabloing93/credit-scoring-prediction/assets/32267303/294c6665-7037-49d3-864f-9897f475cb79)
+
+<h2>Tecnologías utilizadas </h2>
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-blue.svg?style=for-the-badge&logo=Matplotlib&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
+
+<h2>Escenario 📝</h2>
 "Credit Scoring Prediction" es un proyecto de machine learning centrado en predecir la elegibilidad de los usuarios para recibir préstamos <br>
 basándose en sus métricas y datos. El objetivo principal es utilizar algoritmos de aprendizaje automático para evaluar la probabilidad de  <br>
 que un usuario sea capaz de pagar un préstamo, utilizando información histórica y métricas financieras.<br>
-<br>
-# Configuración del ambiente
-<br>
 
-La configuración del entorno para el proyecto de machine learning es esencial para asegurar un desarrollo suave y efectivo. En este caso, se <br>
-están utilizando algunas bibliotecas clave, como pandas, seaborn, matplotlib.pyplot y sklearn <br>
-<br>
-![image](https://github.com/pabloing93/credit-scoring-prediction/assets/130804905/fd8af9b8-8e03-449f-b482-2f200ef19b9e)
+<h2>1. Limpieza</h2>
+  <h3>1.2. Procesamiento de los Datos</h3>
+  <h3>1.3. EDA: Análisis exploratorio de los datos</h3>
+<h2>2. Modelos</h2>
+  <h3>2.2. Implementación de los modelos</h3>
+<h2>3. Evaluación</h2>
+  <h3>3.2. Evaluación de los modelos y selección del mejor</h3>
+<h2>4. Predicción</h2>
 
-<br>
+<h1>README IN PROGRESS </h1>
 
 # Procesamiento de los Datos
 ## Obtención de los Datos
